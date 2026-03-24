@@ -1,7 +1,7 @@
 google-play-scraper==1.2.7
 app-store-scraper==0.3.5
 pandas==2.2.3
-nltk==3.9.1
+vaderSentiment==3.3.2
 matplotlib==3.9.4
 seaborn==0.13.2
 wordcloud==1.9.4

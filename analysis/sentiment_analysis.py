@@ -1,16 +1,13 @@
-"""Sentiment analysis for app store reviews using NLTK VADER."""
+"""Sentiment analysis for app store reviews using VADER (vaderSentiment)."""
 
-import nltk
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-nltk.download("vader_lexicon", quiet=True)
-from nltk.sentiment.vader import SentimentIntensityAnalyzer  # noqa: E402
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 class SentimentAnalyzer:
-    """Score review sentiment with NLTK VADER and summarise results."""
+    """Score review sentiment with vaderSentiment and summarise results."""
 
     # Compound score thresholds used to assign a sentiment label
     POS_THRESHOLD = 0.05
